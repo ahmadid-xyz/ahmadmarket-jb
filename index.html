@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JB AHMAD REAL AMAN DAN TERPERCAYA</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(to bottom, #1a1a2e, #16213e);
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        /* Loading Animation */
+        #loading {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: #1a1a2e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        #loading span {
+            font-size: 2rem;
+            color: #e94560;
+            font-weight: bold;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+        #loading.hidden {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s ease-out, visibility 0.5s;
+        }
+        header {
+            background: #0f3460;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            animation: slideIn 1s ease-out;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: #e94560;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #e94560;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            animation: fadeIn 1s ease-in-out;
+        }
+        section {
+            margin: 40px 0;
+            padding: 20px;
+            background: #1a1a2e;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #e94560;
+        }
+        .products, .articles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .card {
+            background: #16213e;
+            border-radius: 8px;
+            margin: 10px;
+            flex: 1 1 calc(33.333% - 20px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: slideUp 0.8s ease-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card h3 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+        }
+        .card p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            color: #c4c4c4;
+        }
+        .card button {
+            background: #e94560;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .card button:hover {
+            background: #ff5673;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0f3460;
+            margin-top: 40px;
+        }
+        footer p {
+            font-size: 1rem;
+            color: #c4c4c4;
+        }
+        /* Animations */
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading">
+        <span>Loading...</span>
+    </div>
+
+    <header>
+        <h1>Selamat Datang Di Market JB Ahmad</h1>
+        <p>Nikmati Dan Lihat Beberapa Produk Kami</p>
+    </header>
+    <nav>
+        <a href="#jualan">Jualan</a>
+        <a href="#artikel">Artikel</a>
+        <a href="#deskripsi">Deskripsi</a>
+    </nav>
+    <div class="container">
+        <!-- Section Jualan -->
+        <section id="jualan">
+            <h2>Produk Terbaik Kami</h2>
+            <div class="products">
+                <div class="card">
+                    <img src="https://img100.pixhost.to/images/425/537623294_skyzopedia.jpg" alt="Product 1">
+                    <h3>Akun All Game</h3>
+                    <p>Harga: Rp 0 - Rp 500.000</p>
+                    <button onclick="window.location.href='https://wa.me/6287847034915?text=Halo%20saya%20ingin%20beli%20Akun';">Beli Sekarang</button>
+                </div>
+                <div class="card">
+                    <img src="https://img100.pixhost.to/images/425/537627923_skyzopedia.jpg" alt="Product 2">
+                    <h3>Injektor Free Fire</h3>
+                    <p>Harga: Rp 25.000</p>
+                    <button onclick="window.location.href='https://wa.me/6287847034915?text=Halo%20saya%20ingin%20beli%20Injektor';">Beli Sekarang</button>
+                </div>
+                <div class="card">
+                    <img src="https://img100.pixhost.to/images/425/537627172_skyzopedia.jpg" alt="Product 3">
+                    <h3>File Setting Free Fire</h3>
+                    <p>Harga: Rp 30.000 - Rp 300.000</p>
+                    <button onclick="window.location.href='https://wa.me/6287847034915?text=Halo%20saya%20ingin%20beli%20FileEpep';">Beli Sekarang</button>
+                </div>
+            </div>
+        </section>
+        <!-- Section Artikel -->
+        <section id="artikel">
+            <h2>Artikel Terbaru</h2>
+            <div class="articles">
+                <div class="card">
+                    <img src="https://img100.pixhost.to/images/413/537478882_skyzopedia.jpg" alt="Article 1">
+                    <h3>Tips Sukses Berjualan</h3>
+                    <p>Pelajari bagaimana memulai bisnis dengan langkah-langkah praktis.</p>
+                    <button>Baca Selengkapnya</button>
+                </div>
+                <div class="card">
+                    <img src="https://img100.pixhost.to/images/401/537321562_skyzopedia.jpg" alt="Article 2">
+                    <h3>Tingkatan  Penjualan</h3>
+                    <p>Rahasia meningkatkan omzet dengan strategi digital marketing.</p>
+                    <button>Baca Selengkapnya</button>
+                </div>
+                <div class="card">
+                    <img src="https://img100.pixhost.to/images/425/537629624_skyzopedia.jpg" alt="Article 3">
+                    <h3>Tren Produk 2024</h3>
+                    <p>Kenali produk-produk yang akan booming di tahun depan.</p>
+                    <button>Baca Selengkapnya</button>
+                </div>
+            </div>
+        </section>
+        <!-- Section Deskripsi -->
+        <section id="deskripsi">
+            <h2>Deskripsi Website</h2>
+            <p>
+                Website ini dirancang untuk membantu anda mencari produk dengan lebih mudah dan menarik.
+                Kami menyediakan artikel informatif untuk meningkatkan pengetahuan Anda tentang bisnis
+                dan juga showcase produk terbaik untuk pelanggan Anda. Nikmati pengalaman jualan yang lebih
+                profesional dan modern di platform ini.
+            </p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 AHMAD REAL.</p>
+    </footer>
+
+    <script>
+        // Loading Screen Timeout
+        window.addEventListener('load', () => {
+            const loadingScreen = document.getElementById('loading');
+            setTimeout(() => {
+                loadingScreen.classList.add('hidden');
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
